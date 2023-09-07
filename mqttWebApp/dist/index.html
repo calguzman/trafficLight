@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>MoviApp 1.0</h1>
+
+    <h3>Plataforma de Monitoreo Semaforización</h3>
+<div class="globalContainer">
+    <div class="box">
+        <img class="image" src="./CajaSemaforo.png" alt="" width="150px">
+            <div class="circles">
+                <div id="red" class="circle red"></div>
+                <div id="orange" class="circle gray"></div>
+                <div id="green" class="circle gray"></div>
+            </div>              
+        <div id="infoContainer">
+            <span>Dispositivo: # 001</span>
+            <span>Ubicación: la Pradera</span>
+        </div>
+        <div id="controles">
+            <span>MODO MANTENIMIENTO</span>
+            <button id="startmaintenanceMode">ON</button>
+            <button id="stopMaintenanceMode">OFF</button>
+        </div>
+        <div id="connectionStatus" class="disconnected">
+            <span id="textStatusConnection" class="text-white">Desconectado</span>
+        </div>
+    </div>
+
+    
+</div>  
+
+    <script src="main.js"></script>
+</body>
+</html>

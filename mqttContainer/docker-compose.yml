@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+    mqtt-enviroment:
+      container_name: mqtt-broker
+      image: eclipse-mosquitto
+      restart: always
+      volumes:
+        - ./mosquitto/config:/mosquitto/config
+        - ./mosquitto/data:/mosquitto/data
+        - ./mosquitto/log:/mosquitto/log
+      ports:
+        - 1883:1883
+        - 9001:9001
